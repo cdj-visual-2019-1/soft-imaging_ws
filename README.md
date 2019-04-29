@@ -29,7 +29,7 @@ Complete la tabla:
 
 # Máscaras de convolución
 
-Images Original 
+Imagen Original 
 
 ![Detección de bordes:](/taller1/taller1Mascaras/data/mandrill.png)
 
@@ -43,6 +43,16 @@ Images Original
   * **Enfocar:** El objetivo como su nombre lo indica es enfocar el objeto en primer plano y que se vea de manera mas nítida como se muestra en la imagen.
 
   ![alt text](/taller1/taller1Mascaras/data/enfocar.png)
+
+# Escala de grises
+
+Imagen original
+
+![original](/taller1/taller1_escal_grises/data/landscape.jpg)
+
+Para el taller se emplearon 4 objetos `PGraphics` donde se mostraban la imagen orginal, la imagen en escala de grises (Luma), el histograma y la imagen segmentada. A continuación se muestra el resultado obtenido.
+
+![resultado](/taller1/taller1_escal_grises/data/result.png)
 
 ## Entrega
 
