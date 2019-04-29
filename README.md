@@ -46,6 +46,7 @@ Imagen Original
 
 # Escala de grises
 
+## Imágenes
 Imagen original
 
 ![original](/taller1/taller1_escal_grises/data/landscape.jpg)
@@ -53,6 +54,16 @@ Imagen original
 Para el taller se emplearon 4 objetos `PGraphics` donde se mostraban la imagen orginal, la imagen en escala de grises (Luma), el histograma y la imagen segmentada. A continuación se muestra el resultado obtenido.
 
 ![resultado](/taller1/taller1_escal_grises/data/result.png)
+
+## Video
+
+Se realizó un análisis de video en el cual se obtenia la frecuencia de frames mostrados gracias a la variable `frameRate`. A continuación se nuestran análisis:
+
+* Escala de grises
+
+![resultado escala de grises en video](/taller1/taller1_video/data/result.png)
+
+Se obtuvo como resultado un promedio de 20 frames por segundo.
 
 ## Entrega
 

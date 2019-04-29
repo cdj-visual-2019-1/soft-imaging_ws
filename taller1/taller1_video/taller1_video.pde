@@ -39,6 +39,7 @@ void draw() {
   mod.image(gray, 0, 0, 550, 400);
   mod.endDraw();
   image(mod, 590, 20);
+  println("FrameRate: " + frameRate +"   FrameCount: " + frameCount); 
 }
 
 // Called every time a new frame is available to read
