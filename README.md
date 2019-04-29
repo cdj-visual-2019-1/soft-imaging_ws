@@ -22,11 +22,17 @@ Complete la tabla:
 
 | Integrante | github nick |
 |------------|-------------|
-|            |             |
-
+| Jhon Torres | jhont285 |
+| Dago Fonseca | dagofonseca |
+| Camilo Pinzon | capinzonr |
 ## Discusión
 
-(describa brevemente las actividades realizadas y los resultados obtenidos)
+# Máscaras de convolución
+
+* Se aplicaron tres máscaras de convolución
+  * **Detección de bordes:** El objetivo es resaltar los bordes de la imagen y se logra por medio de la detección drástica de brillo de la imagen y se utiliza principalmente para la identificación de patrones
+  * **Desenfoque de cuadro:** El objetivo es suavizar la imagen, tiene su nombre porque obtiene el mismo efecto que si tomamos una fotografía desenfocada. Por otro lado, hay que tener en cuenta que pierde nitidez y claridad
+  * **Enfocar:** El objetivo como su nombre lo indica es enfocar el objeto en primer plano y que se vea de manera mas nítida como se muestra en la imagen.
 
 ## Entrega
 

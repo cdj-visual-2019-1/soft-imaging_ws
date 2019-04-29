@@ -1,25 +1,9 @@
-PGraphics pg, pg2, pg3;
+PGraphics pg;
 PImage photo, photoGray;
 int heightImg;
 PGraphics[] pgMask;
 PImage[] photoMask;
 String[] titleMask;
-
-PImage grayScale(PImage original, float coefRed, float coefGreen, float coefBlue){
-  PImage image = original;
-  image.loadPixels();
-  float red, blue, green, sum;
-  int dimension = image.width * image.height;
-  for(int i = 0; i < dimension; i+=1){
-    red = red(image.pixels[i]);
-    blue = blue(image.pixels[i]);
-    green = green(image.pixels[i]);
-    sum = coefRed*red + coefGreen*green + coefBlue*blue;
-    image.pixels[i] = color(sum);    
-  }
-  image.updatePixels();
-  return image;
-}
 
 PImage applyMask(PImage original, double mask[][]) {
   PImage image = original;
@@ -56,25 +40,14 @@ void setup() {
   size(1024, 900);
   background(0);
   textSize(30);
-  //photo = loadImage("landscape.jpg");
-  //photo = loadImage("mandrill.png");
-  //photo = loadImage("lenna.png");
-  photo = loadImage("castle.png");
+  
+  photo = loadImage("mandrill.png");
   photo.resize(300,0);
   heightImg = photo.height;
   pg = createGraphics(300, heightImg);
-  pg2 = createGraphics(300, heightImg);
-  pg3 = createGraphics(300, heightImg);
   pg.beginDraw();  
   pg.image(photo, 0, 0);
   pg.endDraw(); 
-  pg2.beginDraw();
-  photoGray = grayScale(photo, 0.3333, 0.3333, 0.3333);
-  pg2.image(photoGray, 0, 0);
-  pg2.endDraw();
-  pg3.beginDraw();
-  pg3.image(grayScale(photo, 0.212, 0.701, 0.087 ), 0, 0);
-  pg3.endDraw();
   
   titleMask = new String[3];
   titleMask[0] = "Detección de bordes";
@@ -88,9 +61,8 @@ void setup() {
   pgMask = new PGraphics[masks.length];
   photoMask = new PImage[masks.length];
   
-  
   for (int i = 0; i < pgMask.length; i++) {
-    photoMask[i] = loadImage("castle.png");
+    photoMask[i] = loadImage("mandrill.png");
     photoMask[i].resize(300,0);
     heightImg = photoMask[i].height;
     pgMask[i] = createGraphics(300, heightImg);
@@ -102,24 +74,12 @@ void setup() {
 }
 
 void draw() {
-  text("Original", 20, 30);
-  text("Promedio", 340, 30);
-  text("Luma", 660, 30);
-  image(pg, 20, 40);
-  image(pg2, 340, 40);
-  image(pg3, 660, 40);
+  text("Original", 340, 30);
+  image(pg, 340, 40);
   
   for (int i = 0; i < 3; i++) {
     text(titleMask[i], (i * 320) + 20, 390);
     image(pgMask[i], (i * 320) + 20, 400);
   }
-    
-  int[] hist = new int[256];
-  photoGray.loadPixels();
-  for (int i = 0; i < photoGray.width*photoGray.height; i += 1) {
-    //println("With Colo function: " + color(photoGray.pixels[i]) + "  without: "+int(photoGray.pixels[i]));
-    //int which = int(map(i, 0, image.width, 0, 255));  
-    //int y = int(map(histRed[which], 0, histMax, image.height, 0));
-    //pg3.line(i, photo.height, i, y);
-  }
+  
 }
