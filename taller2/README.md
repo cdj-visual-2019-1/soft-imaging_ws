@@ -25,7 +25,7 @@ Complete la tabla:
 |---------|-----------|------------|------------------------------------|-----------------------------|
 | Sigma Simple | Physiological | [Sigma Motion](https://michaelbach.de/ot/mot-sigma/index.html)  | Rize rectangles with arrow keys and control velocity con keys (+, -) ||
 | Dancer | Moiré Patterns | [Scanimation](https://michaelbach.de/ot/mot-scanimation/)| mouse move |                             |
-| Stroboscopic Artifacts | Movement | [Scanimation](https://michaelbach.de/ot/mot-scanimation/) | With the slider control the angle to rotate ||
+| Stroboscopic Artifacts | Movement | [Stroboscopic Artifacts](https://michaelbach.de/ot/mot-strob/index.html) | With the slider control the angle to rotate ||
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
