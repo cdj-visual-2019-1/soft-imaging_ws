@@ -16,7 +16,7 @@ Complete la tabla:
 |------------|-------------|
 | Jhon Torres | jhont285 |
 | Dago Fonseca | dagofonseca |
-| Camilo Pinzon | capinzonr |
+| Camilo Pinzon | capinzor |
 ## Discusión
 
 1. Complete la tabla
