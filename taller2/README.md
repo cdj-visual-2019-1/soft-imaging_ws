@@ -22,7 +22,7 @@ Complete la tabla:
 
 | Ilusión | Categoria | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |---------|-----------|------------|------------------------------------|-----------------------------|
-| Sigma Simple | Physiological | [Sigma Motion](https://michaelbach.de/ot/mot-sigma/index.html)  | Rize rectangles with arrow keys and control velocity con keys + and - ||
+| Sigma Simple | Physiological | (Sigma Motion)[https://michaelbach.de/ot/mot-sigma/index.html]  | Rize rectangles with arrow keys and control velocity con keys + and - ||
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
