@@ -14,22 +14,23 @@ Complete la tabla:
 
 | Integrante | github nick |
 |------------|-------------|
-|            |             |
-
+| Jhon Torres | jhont285 |
+| Dago Fonseca | dagofonseca |
+| Camilo Pinzon | capinzor |
 ## Discusión
 
 1. Complete la tabla
 
 | Ilusión | Categoria | Referencia | Tipo de interactividad (si aplica) | URL código base (si aplica) |
 |---------|-----------|------------|------------------------------------|-----------------------------|
-| Sigma Simple | Physiological | (Sigma Motion)[https://michaelbach.de/ot/mot-sigma/index.html]  | Rize rectangles with arrow keys and control velocity con keys + and - ||
-|         |           |            |                                    |                             |
-|         |           |            |                                    |                             |
+| Sigma Simple | Physiological | [Sigma Motion](https://michaelbach.de/ot/mot-sigma/index.html)  | Rize rectangles with arrow keys and control velocity con keys (+, -) ||
+| Dancer | Moiré Patterns | [Scanimation](https://michaelbach.de/ot/mot-scanimation/)| mouse move |                             |
+| Stroboscopic Artifacts | Movement | [Scanimation](https://michaelbach.de/ot/mot-scanimation/) | With the slider control the angle to rotate ||
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
 |         |           |            |                                    |                             |
 
-2. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
+1. Describa brevememente las referencias estudiadas y los posibles temas en los que le gustaría profundizar
 
 ## Entrega
 
