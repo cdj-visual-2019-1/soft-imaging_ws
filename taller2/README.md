@@ -26,7 +26,7 @@ Complete la tabla:
 | Sigma Simple | Physiological | [Sigma Motion](https://michaelbach.de/ot/mot-sigma/index.html)  | Rize rectangles with arrow keys and control velocity con keys (+, -) ||
 | Dancer | Moiré Patterns | [Scanimation](https://michaelbach.de/ot/mot-scanimation/)| Movimiento del ratón |                             |
 | Stroboscopic Artifacts | Movement | [Stroboscopic Artifacts](https://michaelbach.de/ot/mot-strob/index.html) | With the slider control the angle to rotate ||
-| Hering  | Cognitivo -  geométrico  |  [Hering](https://michaelbach.de/ot/ang-hering/index.html)          |           Ocultar y mostrar lineas al hacer click                         |                             |
+| Hering  | Cognitive -  geometrical  |  [Hering](https://michaelbach.de/ot/ang-hering/index.html)          |           Ocultar y mostrar lineas al hacer click                         |                             |
 |    Breathing Square     |  Rotate square motion         |  [Breathing Square](https://michaelbach.de/ot/mot-breathingSquare/index.html)          |    Control de transparencia y velocidad con sliders    |                             |
 |     Psychokinematic Objects    |  Movement illusions |         [Psychokinematic Objects](https://michaelbach.de/ot/mot-psychokin/index.html)   |     Variación de la percepción de la torre con un slider       |                             |
 
