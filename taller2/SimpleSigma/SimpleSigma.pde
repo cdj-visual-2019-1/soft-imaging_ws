@@ -19,7 +19,7 @@ void setup() {
 void draw() {
   background(255);
   fill(0);
-  text("Original", 340, 30);
+  text("SIMPLE SIGMA", 450, 30);
   text("With the arrow (UP, DOWN, LEFT, RIGHT) you can rezize the rectangles", 60, 60);
   text("With the keys + and - you can control the velocity", 60, 80);
   
@@ -31,7 +31,7 @@ void draw() {
     else if (key == '-') rate = rate > 2 ? rate - 2 : rate;
     
     if (keyCode == LEFT) widthRec++;
-    else if (keyCode == RIGHT) widthRec = widthRec > 10 ? widthRec - 1 : widthRec;
+    else if (keyCode == RIGHT) widthRec = widthRec > 1 ? widthRec - 1 : widthRec;
 
     if (keyCode == UP) heightRec = heightRec > 10 ? heightRec - 1 : heightRec;
     else if (keyCode == DOWN) heightRec = heightRec < 350 ? heightRec + 1: heightRec;
