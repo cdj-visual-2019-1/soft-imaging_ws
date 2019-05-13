@@ -11,6 +11,6 @@ void setup()
 void draw()
 {
   background(255);
-  image(background, 250, 0);
+  image(background, 0, 0);
   image(dancer, mouseX, 0);  
 }
