@@ -78,16 +78,12 @@ void draw() {
 }
 
 
-boolean edgeFunction(Vector a, Vector b, Vector c) {
-  return Double.compare((c.x() - a.x()) * (b.y() - a.y()) - (c.y() - a.y()) * (b.x() - a.x()), 0) >= 0;
+float edgeFunction(Vector a, Vector b, Vector c) {
+  return (c.x() - a.x()) * (b.y() - a.y()) - (c.y() - a.y()) * (b.x() - a.x());
 }
 
-boolean isInside(Vector p, Vector V0, Vector V1, Vector V2) {
-  boolean inside = true;
-  inside &= edgeFunction(V0, V1, p);
-  inside &= edgeFunction(V1, V2, p);
-  inside &= edgeFunction(V2, V0, p);
-  return inside;
+boolean arePositive(float a, float b, float c) {
+  return Float.compare(a, 0) >= 0 && Float.compare(b, 0) >= 0 && Float.compare(c, 0) >= 0;
 }
 
 // Implement this function to rasterize the triangle.
@@ -99,14 +95,27 @@ void triangleRaster() {
     final int INIT = -int(pow(2, n)) / 2;
     final int LIMIT = -INIT;
     final int reposition = (width / (2 * LIMIT));
+    final float area = abs(edgeFunction(v1, v2, v3)); 
+    println(area);
+    float w0, w1, w2, r, g , b;
+    Vector p;
     for (int i = INIT; i < LIMIT; i++) {      
-      for (int j = INIT; j < LIMIT; j++)
-        if (isInside(new Vector(i * reposition, j * reposition), v1, v2, v3)) {
+      for (int j = INIT; j < LIMIT; j++) {
+        p = new Vector(i * reposition, j * reposition);
+        w0 = edgeFunction(v1, v2, p);
+        w1 = edgeFunction(v2, v3, p);
+        w2 = edgeFunction(v3, v1, p);
+        if (arePositive(w0, w1, w2)) {
+          r = 255 * (w0 / area);
+          g = 255 * (w1 / area);
+          b = 255 * (w2 / area);
           pushStyle();
           stroke(255, 255, 0, 0);
+          fill(r, g, b);
           square(i, j, 1);
           popStyle();
         }
+      }
     }
   }
 }
@@ -117,7 +126,6 @@ void randomizeTriangle() {
   v1 = new Vector(random(low, high), random(low, high));
   v2 = new Vector(random(low, high), random(low, high));
   v3 = new Vector(random(low, high), random(low, high));
-  println(v1, v2, v3);
 }
 
 void drawTriangleHint() {
