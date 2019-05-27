@@ -76,6 +76,20 @@ void draw() {
   popMatrix();
 }
 
+
+boolean edgeFunction(Vector a, Vector b, Vector c) {
+  return ((c.x() - a.x()) * (b.y() - a.y()) - (c.y() - a.y()) * (b.x() - a.x()) >= 0);
+}
+
+boolean isInside(Vector p, Vector V0, Vector V1, Vector V2) {
+  boolean inside = true;
+  inside &= edgeFunction(V0, V1, p);
+  inside &= edgeFunction(V1, V2, p);
+  inside &= edgeFunction(V2, V0, p);
+  println(inside, p);
+  return inside;
+}
+
 // Implement this function to rasterize the triangle.
 // Coordinates are given in the node system which has a dimension of 2^n
 void triangleRaster() {
@@ -83,8 +97,15 @@ void triangleRaster() {
   // here we convert v1 to illustrate the idea
   if (debug) {
     pushStyle();
-    stroke(255, 255, 0, 125);
-    point(round(node.location(v1).x()), round(node.location(v1).y()));
+    stroke(255, 255, 0, 0);
+    square(0, 0, 1);
+    final int LIMIT = int(pow(2, n));
+    println(LIMIT);
+    //for (int i = 0; i < LIMIT; i++) {      
+    //  for (int j = 0; j < LIMIT; j++)
+    //    if (isInside(new Vector(i, j), v1, v2, v3))
+    //      square(i, j, 1);
+    //}
     popStyle();
   }
 }
