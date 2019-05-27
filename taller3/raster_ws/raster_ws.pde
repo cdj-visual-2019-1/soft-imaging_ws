@@ -74,11 +74,12 @@ void draw() {
   triangleRaster();
   popStyle();
   popMatrix();
+  
 }
 
 
 boolean edgeFunction(Vector a, Vector b, Vector c) {
-  return ((c.x() - a.x()) * (b.y() - a.y()) - (c.y() - a.y()) * (b.x() - a.x()) >= 0);
+  return Double.compare((c.x() - a.x()) * (b.y() - a.y()) - (c.y() - a.y()) * (b.x() - a.x()), 0) >= 0;
 }
 
 boolean isInside(Vector p, Vector V0, Vector V1, Vector V2) {
@@ -99,14 +100,20 @@ void triangleRaster() {
     pushStyle();
     stroke(255, 255, 0, 0);
     square(0, 0, 1);
-    final int LIMIT = int(pow(2, n));
-    println(LIMIT);
+    square(0, 1, 1);
+    popStyle();
+    
+    //final int LIMIT = int(pow(2, n));
     //for (int i = 0; i < LIMIT; i++) {      
     //  for (int j = 0; j < LIMIT; j++)
-    //    if (isInside(new Vector(i, j), v1, v2, v3))
+    //    if (isInside(new Vector(i, j), v1, v2, v3)) {
+    
+    //      
     //      square(i, j, 1);
+    
+    //    }
     //}
-    popStyle();
+    
   }
 }
 
